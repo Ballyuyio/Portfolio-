@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D WORKS & ARTWORKS | SHOWCASE</title>
+    <!-- ใช้ External CSS ร่วมกับทุกหน้า -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="opacity: 0;">
+
+    <!-- Navigation Bar สไตล์ SpaceX -->
+    <nav class="spacex-nav">
+        <div class="nav-container">
+            <button type="button" class="nav-brand js-nav-btn" data-href="index.html" style="background: none; border: none; padding: 0;">
+                ← BACK TO PORTFOLIO
+            </button>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button type="button" class="nav-brand js-nav-btn" data-href="project.html" style="background: none; border: none; padding: 0; color: #888;">
+                    GAME PROJECT
+                </button>
+                <span class="nav-tag">3D ARCHIVE</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section เต็มจอพร้อมวิดีโอพื้นหลัง (ใส่ไฟล์คลิปของคุณ) -->
+    <header class="spacex-video-hero">
+        <video autoplay loop muted playsinline class="hero-bg-video">
+            <!-- [ใส่วิดีโอพื้นหลัง เช่น Submarine_Turn.mp4 หรือคลิปหมุนโมเดล] -->
+            <source src="ชื่อไฟล์วิดีโอพื้นหลัง.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+        <div class="hero-centered-content">
+            <p class="hero-category">3D MODELING / TEXTURING / ANIMATION</p>
+            <h1 class="spacex-mega-title">3D ARTWORKS</h1>
+            <p class="hero-subtitle">PRECISION MODELING & REAL-TIME ASSET PRODUCTION</p>
+            <div class="scroll-indicator">
+                <span>EXPLORE CREATIONS</span>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- ==============================================
+             ผลงานชิ้นที่ 1 (WORK 01)
+             ============================================== -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">WORK // 01</span>
+                <h2>[ Submarine X MDT ]</h2>
+            </div>
+            
+            <div class="grid-2col" style="align-items: center; margin-bottom: 25px;">
+                <!-- การ์ดคำอธิบายผลงาน -->
+                <div class="spacex-card" style="height: 100%;">
+                    <h3 class="card-subtitle">SPECIFICATION & DESIGN</h3>
+                    <p class="card-text">
+                        [ Submarine ]
+                    </p>
+                    <ul class="spacex-list" style="margin-top: 15px;">
+                        <li><strong>SOFTWARE:</strong> [ Maya, Substance 3D Painter ]</li>
+                        <li><strong>TECHNIQUE:</strong> [ Hard-surface, PBR Workflow, Retopology ]</li>
+                        <li><strong>TEXTURE SET:</strong> [ 2K Texture ]</li>
+                    </ul>
+                </div>
+
+                <!-- วิดีโอพรีวิว / หมุนโมเดล (Turntable Video) -->
+                <div class="video-container-box">
+                    <video autoplay loop muted playsinline class="spacex-video">
+                        <source src="Submarine_model/Eiei.mp4" type="video/mp4">
+                        เบราว์เซอร์ไม่รองรับวิดีโอ
+                    </video>
+                </div>
+            </div>
+
+            <!-- แกลเลอรีรูปภาพของผลงานชิ้นที่ 1 -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Submarine_model/Submarine.png" alt="Artwork 1 View 1">
+                    <span class="caption">[ FINAL RENDER ]</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Submarine_model/Submarine1.png" alt="Artwork 1 View 2">
+                    <span class="caption">[ DETAIL VIEW ]</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Submarine_model/Submarine_Workflow.png" alt="Artwork 1 View 3">
+                    <span class="caption">[ WIREFRAME TOPOLOGY ]</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             ผลงานชิ้นที่ 2 (WORK 02)
+             ============================================== -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">WORK // 02</span>
+                <h2>[ ใส่ชื่อผลงานชิ้นที่ 2 ]</h2>
+            </div>
+
+            <div class="grid-2col" style="align-items: center; margin-bottom: 25px;">
+                <!-- การ์ดคำอธิบายผลงาน -->
+                <div class="spacex-card" style="height: 100%;">
+                    <h3 class="card-subtitle">SPECIFICATION & DESIGN</h3>
+                    <p class="card-text">
+                        [ ใส่คำอธิบายรายละเอียด แนวคิด หรือจุดเด่นของผลงานชิ้นที่ 2 ที่นี่ ]
+                    </p>
+                    <ul class="spacex-list" style="margin-top: 15px;">
+                        <li><strong>SOFTWARE:</strong> [ ใส่โปรแกรมที่ใช้ ]</li>
+                        <li><strong>TECHNIQUE:</strong> [ ใส่เทคนิคที่ใช้ ]</li>
+                        <li><strong>TARGET:</strong> [ เช่น Game Asset, Cinematic Render ]</li>
+                    </ul>
+                </div>
+
+                <!-- ภาพเรนเดอร์หลัก หรือคลิปวิดีโอ -->
+                <div class="gallery-item" style="border: 1px solid rgba(255,255,255,0.2);">
+                    <img src="ชื่อรูปภาพชิ้นที่2_หลัก.jpg" alt="Artwork 2 Hero Render" style="height: 270px; object-fit: cover;">
+                    <span class="caption">[ คำอธิบายภาพหลัก ]</span>
+                </div>
+            </div>
+
+            <!-- คลิปวิดีโอ 3 ช่อง (เช่น Animation Rigging หรือมุมกล้องต่างๆ) -->
+            <div class="grid-3col">
+                <div class="media-card">
+                    <div class="video-card-wrap">
+                        <video autoplay loop muted playsinline class="card-video">
+                            <source src="ชื่อคลิป2_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-info">
+                        <h5>[ ชื่อคลิป 1 เช่น IDLE RIG ]</h5>
+                        <p>[ คำอธิบายสั้นๆ ของคลิป ]</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="video-card-wrap">
+                        <video autoplay loop muted playsinline class="card-video">
+                            <source src="ชื่อคลิป2_2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-info">
+                        <h5>[ ชื่อคลิป 2 เช่น WALK CYCLE ]</h5>
+                        <p>[ คำอธิบายสั้นๆ ของคลิป ]</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="video-card-wrap">
+                        <video autoplay loop muted playsinline class="card-video">
+                            <source src="ชื่อคลิป2_3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-info">
+                        <h5>[ ชื่อคลิป 3 เช่น ATTACK POSE ]</h5>
+                        <p>[ คำอธิบายสั้นๆ ของคลิป ]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             ผลงานชิ้นที่ 3 (WORK 03)
+             ============================================== -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">WORK // 03</span>
+                <h2>[ ใส่ชื่อผลงานชิ้นที่ 3 ]</h2>
+            </div>
+
+            <div class="grid-2col" style="align-items: center; margin-bottom: 25px;">
+                <!-- การ์ดคำอธิบายผลงาน -->
+                <div class="spacex-card" style="height: 100%;">
+                    <h3 class="card-subtitle">SPECIFICATION & DESIGN</h3>
+                    <p class="card-text">
+                        [ ใส่คำอธิบายรายละเอียด แนวคิด หรือจุดเด่นของผลงานชิ้นที่ 3 ที่นี่ ]
+                    </p>
+                    <ul class="spacex-list" style="margin-top: 15px;">
+                        <li><strong>SOFTWARE:</strong> [ ใส่โปรแกรมที่ใช้ ]</li>
+                        <li><strong>FEATURES:</strong> [ ใส่จุดเด่น/ฟีเจอร์ ]</li>
+                        <li><strong>OPTIMIZATION:</strong> [ เช่น Low-poly, Lighting Bake ]</li>
+                    </ul>
+                </div>
+
+                <!-- ภาพเรนเดอร์ / วิดีโอของชิ้นที่ 3 -->
+                <div class="gallery-item" style="border: 1px solid rgba(255,255,255,0.2);">
+                    <img src="ชื่อรูปภาพชิ้นที่3_หลัก.jpg" alt="Artwork 3 Hero Render" style="height: 270px; object-fit: cover;">
+                    <span class="caption">[ คำอธิบายภาพหลัก ]</span>
+                </div>
+            </div>
+
+            <!-- แกลเลอรีรูปภาพเพิ่มเติมของชิ้นที่ 3 -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="ชื่อรูปภาพ3_1.jpg" alt="Artwork 3 View 1">
+                    <span class="caption">[ คำอธิบายภาพมุมที่ 1 ]</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="ชื่อรูปภาพ3_2.jpg" alt="Artwork 3 View 2">
+                    <span class="caption">[ คำอธิบายภาพมุมที่ 2 ]</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนท้ายหน้าและปุ่มลิงก์ภายนอก -->
+        <section class="spacex-section" style="border-bottom: none; text-align: center;">
+            <div class="spacex-btn-group" style="justify-content: center;">
+                <button type="button" class="spacex-btn js-nav-btn" data-href="https://www.artstation.com/ball_patanawan" data-target="_blank">
+                    EXPLORE FULL ARTSTATION
+                </button>
+                <button type="button" class="spacex-btn solid js-nav-btn" data-href="project.html">
+                    VIEW GAME SYSTEM (GDD) →
+                </button>
+            </div>
+        </section>
+
+        <footer class="spacex-footer">
+            <p>© 2026 PATANAWAN JARUNONGKRAN | 3D SHOWCASE SYSTEM</p>
+        </footer>
+
+    </div>
+
+    <!-- ควบคุมการกดเปลี่ยนหน้าและเปิดลิงก์ผ่าน JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

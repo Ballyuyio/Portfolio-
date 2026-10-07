@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    padding: 2%;
+}
+
+/* =======================================
+   Desktop Layout (Default)
+======================================= */
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 40% 25%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "main1  main2  right"
+        "footer footer footer";
+    gap: 16px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid-container > * {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+#header {
+    grid-area: header;
+    background-color: #d90429;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+}
+
+#header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+/* Main 1 (Ingredients) */
+#main1 {
+    grid-area: main1;
+    border-left: 5px solid #ef233c;
+}
+
+#main1 h2, #main2 h2 {
+    color: #d90429;
+    margin-bottom: 14px;
+}
+
+#main1 h3 {
+    margin: 12px 0 6px;
+    color: #2b2d42;
+    font-size: 1rem;
+}
+
+#main1 ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+/* Main 2 (Instructions) */
+#main2 {
+    grid-area: main2;
+    border-left: 5px solid #ffb703;
+}
+
+#main2 ol {
+    margin-left: 20px;
+    line-height: 1.7;
+}
+
+#main2 li {
+    margin-bottom: 8px;
+}
+
+/* Right / Sidebar */
+#right {
+    grid-area: right;
+    background-color: #fff3e6;
+    border: 1px solid #ffd8a8;
+}
+
+#right h3 {
+    color: #d90429;
+    margin-bottom: 12px;
+}
+
+#right p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Footer */
+#footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    font-size: 0.9rem;
+    padding: 14px;
+}
+
+#footer a {
+    color: #ffb703;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* =======================================
+   Tablet Screen (max-width: 768px)
+======================================= */
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        width: 95%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header header"
+            "main1  main2"
+            "right  right"
+            "footer footer";
+        gap: 12px;
+    }
+
+    #header h1 {
+        font-size: 1.7rem;
+    }
+
+    .grid-container > * {
+        padding: 16px;
+    }
+}
+
+/* =======================================
+   Mobile Screen (max-width: 480px)
+======================================= */
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "main1"
+            "main2"
+            "right"
+            "footer";
+        gap: 10px;
+    }
+
+    #header {
+        padding: 18px 10px;
+    }
+
+    #header h1 {
+        font-size: 1.4rem;
+    }
+
+    .grid-container > * {
+        padding: 14px;
+    }
+}

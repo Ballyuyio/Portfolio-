@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURRY GUARDIAN | PROJECT SHOWCASE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="opacity: 0;">
+
+    <!-- Navigation Bar ควบคุมปุ่มย้อนกลับด้วย JS -->
+    <nav class="spacex-nav">
+        <div class="nav-container">
+            <button type="button" class="nav-brand js-nav-btn" data-href="index.html" style="background: none; border: none; padding: 0;">
+                ← BACK TO PORTFOLIO
+            </button>
+            <span class="nav-tag">PRODUCTION PIPELINE</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Hero Section -->
+        <header class="spacex-hero">
+            <p class="hero-category">3D ACTION ADVENTURE / WAVE-BASED SURVIVAL</p>
+            <h1 class="hero-title">FURRY GUARDIAN</h1>
+            <p class="hero-desc">
+                การผจญภัยของ "Furry" ผู้กล้าครึ่งสัตว์ในหุบเขาลึกลับ เอาชีวิตรอดจากคลื่นศัตรูที่ถูกปลดปล่อยจากศาลเจ้าโบราณ (The Altar)
+            </p>
+            
+            <div class="hero-showcase-box">
+                <img src="FurryPlayer.jpg" alt="Furry Key Visual" class="showcase-img">
+                <span class="caption">KEY VISUAL: FURRY THE GUARDIAN WITH SWORD</span>
+            </div>
+
+            <div class="hero-meta">
+                <span><strong>PLATFORMS:</strong> PC & MOBILE (ANDROID / IOS)</span>
+                <span><strong>TOOLS:</strong> UNITY, MAYA, SUBSTANCE 3D PAINTER, C#</span>
+                <span><strong>DEVELOPER:</strong> PATANAWAN JARUNONGKRAN</span>
+            </div>
+        </header>
+
+        <!-- 01. Gameplay Video Preview -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">01</span>
+                <h2>MOBILE GAMEPLAY RUNTIME PREVIEW</h2>
+            </div>
+            <div class="video-container-box">
+                <video controls poster="Furry Guardian (1).png" class="spacex-video">
+                    <source src="DemoGame.mp4" type="video/mp4">
+                    เบราว์เซอร์ไม่รองรับการเล่นวิดีโอ
+                </video>
+            </div>
+            <p class="note-text">
+                * ทดสอบระบบควบคุมสัมผัสบน Mobile Touch Controls (Unity Simulator) รองรับคอมโบโจมตี, ท่าไม้ตาย, หลบหลีก และบล็อกดาบ
+            </p>
+        </section>
+
+        <!-- 02. Animation Pipeline -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">02</span>
+                <h2>3D RIGGING & ANIMATION PIPELINE</h2>
+            </div>
+            <p class="section-intro">
+                กระบวนการทำ Bone Rigging, จัดท่า Idle, Walk Cycle และเซ็ตจุดคาบดาบใน Autodesk Maya:
+            </p>
+            
+            <div class="grid-3col">
+                <div class="media-card">
+                    <div class="video-card-wrap">
+                        <video autoplay loop muted playsinline class="card-video">
+                            <source src="Idle.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-info">
+                        <h5>IDLE POSE & CONTROLLERS</h5>
+                        <p>วางโครงสร้างกระดูกหางและใบหู พร้อมท่าเตรียมสู้</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="video-card-wrap">
+                        <video autoplay loop muted playsinline class="card-video">
+                            <source src="walk.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-info">
+                        <h5>WALK & RUN CYCLE</h5>
+                        <p>เพนต์น้ำหนักกระดูก Skin Weight ให้ขนฟูเคลื่อนไหวสมจริง</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="video-card-wrap">
+                        <video autoplay loop muted playsinline class="card-video">
+                            <source src="Attck.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-info">
+                        <h5>ATTACK COMBO POSE</h5>
+                        <p>การหมุนตัวฟันดาบจังหวะคอมโบโจมตี</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. Level Design & System Development -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">03</span>
+                <h2>LEVEL DESIGN & SYSTEM DEVELOPMENT</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Furry Guardian (2).png" alt="Unity Scene NavMesh">
+                    <span class="caption">SCENE VIEW: AI NAVMESH & OCCLUSION CULLING</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Furry Guardian (1).png" alt="Mobile UI Touch Controls">
+                    <span class="caption">UI SYSTEM: MOBILE CONTROLLER & WAVE SYSTEM</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Furry Guardian.png" alt="Bonfire Save Point">
+                    <span class="caption">INTERACTION: BONFIRE SAVE & THE ANCIENT ALTAR</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="FurryPlayer.jpg" alt="Stylized Fur Shading">
+                    <span class="caption">SHADING: STYLIZED FUR & VOLUMETRIC LIGHTING</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. Technical Specifications -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">04</span>
+                <h2>CORE GAMEPLAY MECHANICS</h2>
+            </div>
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <h4>CHARACTER CONTROL</h4>
+                    <ul>
+                        <li><strong>3D Free Movement:</strong> วิ่ง กระโดด และหมุนตัวอิสระ</li>
+                        <li><strong>Stamina Gauge:</strong> ใช้พลังงานเมื่อ Sprint หรือป้องกัน</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>COMBAT FEEDBACK</h4>
+                    <ul>
+                        <li><strong>3-Step Combo:</strong> ฟันคอมโบ 3 จังหวะต่อเนื่อง</li>
+                        <li><strong>Heavy Attack:</strong> ท่าฟันหมุนตัวรอบทิศ</li>
+                        <li><strong>HitStop & Camera Shake:</strong> ฟีดแบ็กหยุดเวลาและกล้องสั่น</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>SURVIVAL & ECONOMY</h4>
+                    <ul>
+                        <li><strong>Wave Spawner:</strong> ศัตรูบุกเป็นระลอกตามความยาก</li>
+                        <li><strong>5-Slot Inventory:</strong> กระเป๋า 5 ช่องรองรับ Stacking</li>
+                        <li><strong>Loot Drops:</strong> เหรียญและยาฟื้นฟูเลือด/พลังงาน</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>SYSTEM ARCHITECTURE</h4>
+                    <ul>
+                        <li><strong>JSON Save/Load:</strong> บันทึกค่าสถานะและตำแหน่งพิกัด</li>
+                        <li><strong>Cross-Platform:</strong> โครงสร้างรองรับ PC และ Mobile</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. Future Roadmap -->
+        <section class="spacex-section">
+            <div class="section-header">
+                <span class="step-num">05</span>
+                <h2>DEVELOPMENT ROADMAP</h2>
+            </div>
+            <div class="roadmap-box">
+                <div class="roadmap-node">
+                    <span class="node-title">PHASE 01</span>
+                    <p>เพิ่มศัตรูรูปแบบใหม่และระบบบอสประจำด่าน (Boss Encounter)</p>
+                </div>
+                <div class="roadmap-node">
+                    <span class="node-title">PHASE 02</span>
+                    <p>ระบบ Key & Portal Unlock ปลดล็อกประตูมิติสู่โซนใหม่</p>
+                </div>
+                <div class="roadmap-node">
+                    <span class="node-title">PHASE 03</span>
+                    <p>ระบบอัปเกรดค่าสถานะและต้นไม้ทักษะ (Skill Tree System)</p>
+                </div>
+                <div class="roadmap-node">
+                    <span class="node-title">PHASE 04</span>
+                    <p>ระบบเปลี่ยนชุดเกราะและคอสตูมตัวละคร (Costumes & Customization)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ปุ่มกดเชื่อมต่อไปยังลิงก์ภายนอก (สั่งงานด้วย JS) -->
+        <section class="spacex-section" style="border-bottom: none; text-align: center;">
+            <div class="spacex-btn-group" style="justify-content: center;">
+                <button type="button" class="spacex-btn js-nav-btn" data-href="https://github.com/Ballyuyio" data-target="_blank">
+                    SOURCE CODE ON GITHUB
+                </button>
+                <button type="button" class="spacex-btn js-nav-btn" data-href="https://www.artstation.com/ball_patanawan" data-target="_blank">
+                    VIEW 3D MODEL ON ARTSTATION
+                </button>
+            </div>
+        </section>
+
+        <footer class="spacex-footer">
+            <p>© 2026 PATANAWAN JARUNONGKRAN | FURRY GUARDIAN PRODUCTION</p>
+        </footer>
+
+    </div>
+
+    <!-- เชื่อมโยง External JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

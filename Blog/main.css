@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333333;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* หัวข้อหลักด้านบน */
+#top {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* เส้นคั่น */
+hr {
+    display: none; /* ซ่อนเส้นเดิมแล้วใช้ Card Shadow แทน */
+}
+
+/* กล่องแสดงผลโพสต์ทั้งหมด */
+#topic, #reply1, #reply2 {
+    width: 100%;
+    max-width: 600px;
+    min-height: 50px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    font-size: 1rem;
+    line-height: 1.5;
+    word-break: break-word;
+    border-left: 5px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+/* แยกสีไฮไลท์ตามประเภทโพสต์ */
+#topic {
+    border-left-color: #1a73e8; /* สีน้ำเงินสำหรับ Topic */
+    font-weight: 500;
+}
+
+#reply1 {
+    border-left-color: #34a853; /* สีเขียวสำหรับ Reply 1 */
+}
+
+#reply2 {
+    border-left-color: #fbbc05; /* สีเหลืองสำหรับ Reply 2 */
+}
+
+/* กล่องพิมพ์ข้อความ */
+#message {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+    resize: vertical;
+    outline: none;
+    margin-top: 10px;
+    transition: border-color 0.2s;
+}
+
+#message:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* ตกแต่งปุ่มกด */
+button {
+    padding: 10px 24px;
+    margin: 12px 6px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ปุ่ม Post (ปุ่มแรก) */
+button:nth-of-type(1) {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+button:nth-of-type(1):hover {
+    background-color: #1557b0;
+}
+
+/* ปุ่ม Clear (ปุ่มที่สอง) */
+button:nth-of-type(2) {
+    background-color: #ea4335;
+    color: #ffffff;
+}
+
+button:nth-of-type(2):hover {
+    background-color: #c5221f;
+}

@@ -1,0 +1,441 @@
+/* ===================================================
+   SPACEX DESIGN SYSTEM & RESPONSIVE ENGINE (ALL PAGES)
+   =================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+}
+
+/* คอนเทนเนอร์หลัก กำหนดกรอบความกว้างให้อยู่ตรงกลางจอเสมอ */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar ด้านบน */
+.spacex-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.nav-brand {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.nav-brand:hover {
+    opacity: 0.6;
+}
+
+.nav-tag {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #777777;
+}
+
+/* ส่วนหัว Hero Header */
+.spacex-hero {
+    padding: 50px 0 35px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-profile-wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background-color: #111111;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-category {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888888;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.hero-title {
+    font-size: clamp(26px, 4.5vw, 46px);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-desc {
+    font-size: 15px;
+    color: #b8b8b8;
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.hero-showcase-box {
+    margin: 25px 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: #080808;
+}
+
+.showcase-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #777777;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Section ทั่วไป */
+.spacex-section {
+    padding: 45px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.section-header {
+    margin-bottom: 22px;
+}
+
+.step-num {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #666666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-intro {
+    font-size: 14px;
+    color: #a8a8a8;
+    margin-bottom: 20px;
+}
+
+/* คุมขนาดกล่อง Video ไม่ให้ล้น */
+.video-container-box {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+    background: #080808;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.spacex-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+    display: block;
+}
+
+.note-text {
+    font-size: 12px;
+    color: #777777;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+/* แกลเลอรี 3 คอลัมน์สำหรับ Animation / Progress */
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.media-card {
+    background: #080808;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    overflow: hidden;
+}
+
+.video-card-wrap {
+    width: 100%;
+    height: 220px;
+    background: #050505;
+    overflow: hidden;
+}
+
+.card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h5 {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.card-info p {
+    font-size: 12px;
+    color: #888888;
+    line-height: 1.6;
+}
+
+/* Grid Layouts สำหรับ Specs */
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 15px;
+}
+
+.spec-card {
+    background: #080808;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 18px;
+}
+
+.spec-card h4 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 6px;
+    color: #ffffff;
+}
+
+.spec-card ul {
+    list-style: none;
+}
+
+.spec-card li {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* แกลเลอรีรูปภาพ Screenshots */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #080808;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(15%);
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.gallery-item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.caption, .gallery-item .caption {
+    display: block;
+    padding: 8px 10px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #777777;
+    background: #050505;
+}
+
+/* แผนงาน Roadmap */
+.roadmap-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 15px;
+}
+
+.roadmap-node {
+    border-left: 2px solid #ffffff;
+    padding-left: 12px;
+}
+
+.node-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #666666;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.roadmap-node p {
+    font-size: 13px;
+    color: #bbbbbb;
+}
+
+/* ปุ่มกดสไตล์ SpaceX */
+.spacex-btn-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.spacex-btn {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: transparent;
+    padding: 11px 22px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.spacex-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.spacex-footer {
+    text-align: center;
+    padding: 35px 20px 10px 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #555555;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 25px;
+}
+
+/* การจัด Grid และการ์ด Assignment ให้เป็นกล่องสวยงาม */
+.assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.assign-card {
+    background: #080808;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    display: block;
+    user-select: none;
+    transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.assign-card:hover {
+    border-color: #ffffff;
+    background: #111111;
+    transform: translateY(-2px);
+}
+
+.assign-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #777777;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.assign-card p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN (มือถือและจอเล็ก)
+   =================================================== */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-profile-wrap {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .hero-meta {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .spacex-section {
+        padding: 35px 0;
+    }
+
+    .spacex-btn-group {
+        flex-direction: column;
+    }
+
+    .spacex-btn {
+        width: 100%;
+    }
+}

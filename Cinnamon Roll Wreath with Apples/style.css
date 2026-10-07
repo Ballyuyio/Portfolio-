@@ -1,0 +1,170 @@
+/* รีเซ็ตค่าและฟอนต์พื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f3ee;
+    color: #4a3b32;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+/* Container หลัก (กำหนด width, margin center) */
+.recipe-container {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e0d5c1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ส่วน Header (ใช้ text-align, margin, padding) */
+.header-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.main-title {
+    font-size: 28px;
+    color: #8c3b23;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #7d6b5c;
+    margin-bottom: 15px;
+}
+
+/* กล่องภาพแบนเนอร์ */
+.banner-box {
+    margin: 15px 0;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #d4a373;
+}
+
+/* ส่วน Flexbox แกลเลอรีรูปภาพ */
+.gallery-section {
+    margin: 20px 0 30px 0;
+}
+
+.image-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.thumb-img {
+    width: 32%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ecd9c6;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumb-img:hover {
+    transform: scale(1.03);
+}
+
+/* กล่องการ์ดเนื้อหา (Box model: margin, padding, border) */
+.card {
+    background-color: #fffbf5;
+    border: 1px solid #ebd8c8;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 22px;
+    color: #a04000;
+    border-bottom: 2px dashed #d7b599;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* การจัดสองคอลัมน์ด้วย display: flex */
+.content-flex {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.text-col {
+    flex: 1.2;
+}
+
+.img-col {
+    flex: 0.8;
+    text-align: center;
+}
+
+/* รูปประกอบด้านข้าง */
+.side-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #d1c7bd;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.steps-guide-img {
+    max-height: 520px;
+    object-fit: cover;
+}
+
+/* จัดระยะข้อความรายการส่วนผสมและขั้นตอน */
+.ingredient-list, .steps-list {
+    margin-left: 20px;
+}
+
+.ingredient-list li, .steps-list li {
+    margin-bottom: 12px;
+}
+
+/* Footer แหล่งที่มา */
+.footer-section {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #eae2d6;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7b6f65;
+}
+
+.footer-section a {
+    color: #a04000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* ปรับให้รองรับหน้าจอมือถือ (Responsive) */
+@media (max-width: 768px) {
+    .content-flex, .image-flex-container {
+        flex-direction: column;
+    }
+
+    .thumb-img {
+        width: 100%;
+        height: auto;
+    }
+}
